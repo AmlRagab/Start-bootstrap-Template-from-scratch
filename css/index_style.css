@@ -1,0 +1,181 @@
+/*common style*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  transition: all 1s;
+
+}
+
+.main-color{
+  color: #fed136;
+}
+
+h5{
+  font-family: 'Roboto Slab', serif;
+
+}
+#btnup { 
+  display: none;
+
+  color: white;
+background-color: #fed136;
+  right: 50px;
+  bottom: 50px;
+  position: fixed;
+  z-index: 555555; 
+
+}
+#btnup.active{border: #fed136;}
+
+#navbar{
+  background-color: transparent;
+  transition: background 1s;
+}
+.bg-blue{background-color: #1ec1d9;}
+.bg-green{    background-color: #10c45c;}
+.bg-drk-green{
+  background-color: #47c58e
+}
+.bg-yellow{
+  background-color: #f9bd44;
+}
+.bg-bink{
+  background-color: #e948ae;
+
+}
+.bg-red{        background-color: #e84b3a;
+}
+
+.bg-drk-bink{background-color: #92278f;}
+
+
+.navbar-brand{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.7rem;
+
+
+}
+.navbar-dark .navbar-nav .nav-item .nav-link{
+  font-size: .9rem;
+  transition: .5s all;
+
+}
+.navbar-dark .navbar-nav .nav-item .nav-link:hover{
+  color: #fed136 !important;
+}
+/*header*/
+header{
+  background-image: url("../images/header-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+ 
+}
+header .btn {
+font-size: 1.2rem;
+}
+header .display{
+  font-size:4.5rem;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+}
+/*services*/
+ #services .info {
+  bottom:15px;
+  left: 5px;
+  right: 5px;
+  font-size: 1.2rem;
+  
+  transition:  transform 1s .25s;
+  
+}
+#services  .name 
+{
+  font-size: 1.5rem;
+  color: #002147;
+
+}
+#services .overlay
+{
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  font-family: "segoe ui light";
+  background-color: #002147a2;
+  transform: translateY(-125%);
+  transition:  transform 1s;
+
+}
+#services .image-hover{
+  overflow: hidden;
+}
+#services .image-hover:hover .info{
+  transform: translateY(150%);
+
+
+}
+#services .image-hover:hover .overlay {
+  transform: translateY(0%);
+
+}
+/*categories*/
+#categories , #portfolio{
+  background-color: #f8f9fa;
+  font-family: 'Montserrat', sans-serif;
+}
+#categories .overlay
+{
+  top: 0;
+  left: 0;
+ width: 100%;
+ height: 100%;
+ transition: all 1s;
+ 
+}
+#categories .image-hover:hover .overlay{
+  opacity: .5;
+}
+
+
+/*portfolio*/
+
+
+  
+  #portfolio .overlay-1{
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     transition: all
+     1s;
+     opacity: 0;
+   }
+
+
+   #portfolio .image-hover:hover .overlay-1{opacity: 1;}
+
+   /*fotter*/
+   #contact {
+     background-image: url("../images/map-image.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+    
+     
+     background-color: #212529;   }
+
+
+
+     #contact h2 {
+      font-size: 2.5rem;
+      font-family: 'Montserrat', sans-serif;
+
+    }
+   
+     .form-control
+    {
+      padding: 2rem .9rem;
+    }
+    textarea{
+      height: 100%;
+    }
